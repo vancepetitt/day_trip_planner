@@ -1,0 +1,1 @@
+# day_trip_planner
