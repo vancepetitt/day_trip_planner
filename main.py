@@ -1,5 +1,5 @@
 #lists
-from random import randrange,choice
+from random import randrange
 from day_trip_generator import destination_list
 from day_trip_generator import transportation_list
 from day_trip_generator import restaurant_list
@@ -15,8 +15,6 @@ def select_random(list):
     randomly_selected = randrange(0,list_length)
     return list[randomly_selected]
 
-#destination = choice(destination_list)
-#print(destination)
 
 #welcome message
 user_name = input('Thank you for your interest in booking a day trip! Please enter your name: ')
@@ -33,8 +31,7 @@ def select_trip_options():
         selected = False
         while selected == False:
             new_option = select_random(component)
-            print(new_option)
-            approval = input('Would you like this to be a part of your day trip? Please enter "Yes" or "No": ')
+            approval = input(f'Would you like for {new_option} to be a part of your day trip? Please enter "Yes" or "No": ')
             if approval == 'No' or approval == 'no':
                 print("...Generating a new option for you.")
             elif approval == 'Yes' or approval == 'yes':
