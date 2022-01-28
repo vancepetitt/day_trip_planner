@@ -1,3 +1,3 @@
 # day_trip_planner
 
-Test text editing
+GitHub Repository for devCodeCamp "day trip planner" project.
